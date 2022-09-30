@@ -1,18 +1,20 @@
 import  React from 'react';
 import data from './data';
 
-function Body(props){
+function Body(){
    return(
-    <div>
-       <img src={'../img/ ${props.image}'}/>
-       <div>
-        <span>{ props.location}</span>
-        <span>{ props.title}</span>
-        <span>{ props.dates}</span>
-        <span>{ props.map}</span>
-        <p>{ props.description}</p>
-       </div>
-    </div>
+    data.map((item)=>{
+      return
+      <div>
+      <h1>{item.location}</h1>
+      <h5>{item.title}</h5>
+      <h5>{item.map}</h5>
+      <h5>{item.dates}</h5>
+      <h5>{item.description}</h5>
+      
+      </div>
+      
+    })
    )
 }
 export default Body

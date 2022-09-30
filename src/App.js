@@ -1,27 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 import data from'./data'
-
+import Body from './body';
+import Header from './header';
+import Footer from './footer';
 function App() {
 
-    const Body= data.map(props=> {
-      return (
-        <Body
-          image= { props.image}
-          location={ props.location}
-          title={ props.title}
-          dates={props.dates}
-          map={props.map}
-          description={props.description}
-        />
-      )
-    })
-  
-  return (
     
-    {Body}
+      return (
+        <>
+        <Header/>
+         <Body/> 
+        <Footer/>
+        </>
+      )
+    }
+  
+  
+    
 
-  );
-}
+
 
 export default App;
