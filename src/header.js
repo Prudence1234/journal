@@ -1,8 +1,9 @@
 import React from "react"
+import './App.css'
 
 function Header(){
     return(
-        <h3>Prudence Travel Journal</h3>
+        <h3 className="header">Prudence Travel Journal</h3>
     )
 
 }
